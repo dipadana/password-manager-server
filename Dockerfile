@@ -21,7 +21,7 @@ RUN apt-get update -qq && \
     apt-get install -y python-is-python3 pkg-config build-essential openssl 
 
 # Install NPM pakage
-RUN npm install -g npm@9.6.5
+RUN npm install -g npm@9.6.6
 
 # Install node modules
 COPY --link package.json package-lock.json .
